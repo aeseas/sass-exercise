@@ -1,0 +1,144 @@
+// This is a Sass silent comment.
+// We don't need to show the world all this instructional stuff
+// stometimes notes are just for the developers 
+@import "https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css";
+
+/* EXERSICE */
+
+body {
+    font-size: (12 / 16 ) * 1em;
+    background-color: #fafafa;
+    margin: 0 auto;
+    color: #341922;
+}
+
+.italic { 
+    font-style: italic;
+    text-decoration: underline;
+}
+
+header {
+    border-bottom: 1px solid #341922;
+    padding-bottom: 70px;
+    h1 {
+        font-size: 3em;
+        text-align: center;
+        padding: 30px;
+        letter-spacing: 1em;
+    }
+    nav {
+        text-align: center;
+        
+        li {
+            padding-top: 40px;
+            a {
+                color: #82293d;
+                letter-spacing: 2em;
+                text-decoration: none;
+                line-height: 3em;
+                transition: all .3s ease-in;
+                &:hover { letter-spacing: 0.5em; 
+                }
+            }    
+        }
+    }
+}  
+
+main {
+    text-align: center;
+    h2 {
+        font-size: 2em;
+        letter-spacing: 1em;
+        padding: 30px;
+    }
+    p { 
+        margin: 0 30px; 
+    }
+    img { width: 400px; }
+}
+
+.copyright {
+    p {
+        margin: auto;
+        padding-bottom: 100px;
+        text-align: center;
+    }
+}
+
+footer {
+    padding: 30px;
+    text-align: center;
+}
+
+/* QUERIES */
+@media screen and (min-width: 600px) {
+    body {
+        width: 800px;
+    }
+    header {
+        padding-bottom: 0;
+        height: 100vh;
+        .copyright {
+            background-color: green;
+        }
+        h1 {
+            font-size: 3.6em;
+            padding-top: 100px;
+        }
+            nav {
+            padding-top: 150px;
+            ul li a:hover { letter-spacing: 5em;}
+        }
+    }
+
+    main {
+        .first {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            img { 
+                height: 100%;
+            }
+            p:hover { text-decoration: underline; }
+        }
+        .sec1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            img { 
+                height: 100%;
+            }
+            p:hover { text-decoration: underline; }
+        }
+        .sec2 {
+            display: flex;
+            align-items: center;
+            flex-direction: row-reverse;
+            justify-content: center;
+            height: 100%;
+            img { 
+                height: 100%;
+            }
+            p:hover { text-decoration: underline; }
+        }
+        .third {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            img { 
+                height: 100%;
+            }
+            p:hover { text-decoration: underline; }
+        }
+        .second { 
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    footer { text-align: left;}
+
+}
